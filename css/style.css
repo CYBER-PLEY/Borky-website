@@ -685,14 +685,41 @@ button {
     float: left;
     position: relative;
 }
-.image_6:hover .overlay-prod {
-    width: 100%;
+.overlay-prod{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: #021239;
+    cursor: pointer;
+}
+.over-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-sm-4:hover .overlay-prod {
+    /* width: 95%;
     height: 400px;
     float: left;
     position: absolute;
     background-color: #021239;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white; */
+    opacity: 0.9;
 
+
+}
 .reader_text {
     width: 100%;
     float: left;
