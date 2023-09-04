@@ -139,9 +139,12 @@
         left: 740px;
         top: 67%;
     }
-    .logo {
-        width: 15%;
+    /* .logo {
+        width: 50%;
         margin-right: 70px;
+    } */
+    .l-nv{
+        width: 70%;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 23px;
@@ -204,10 +207,13 @@
     .navbar-toggler {
         background-color: #fff;
     }
-    .logo {
+    /* .logo {
         width: 15%;
         margin-right: 0;
         top: 40px;
+    } */
+    .l-nv{
+        width: 70%;
     }
     .navbar {
         padding: .5rem 15px;
@@ -382,10 +388,13 @@
     .navbar-toggler {
         background-color: #fff;
     }
-    .logo {
+    /* .logo {
         width: 15%;
         margin-right: 0;
         top: 40px;
+    } */
+    .l-nv{
+        width: 70%;
     }
     .navbar {
         padding: .5rem 15px;
@@ -570,9 +579,12 @@
         background-color: #fff;
     }
     .logo {
-        width: 30%;
+        /* width: 30%; */
         margin-right: 10px;
-        top: 5px;
+        top: 0px;
+    }
+    .l-nv{
+        width: 70%;
     }
     .navbar {
         padding: .5rem 15px;
