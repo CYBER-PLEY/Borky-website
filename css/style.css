@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -804,45 +805,48 @@ button {
 }
 .serv-sect{
     width: 100%;
-    height: 3000px;
-    background-image: url(../images/back.png);
-    background-size:  100% 30%;
-    background-repeat: no-repeat;
-    background-color:rgba(123, 152, 170, 0.39);
+    height: 15000px;
+    background-color:#f0c22bd5;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 20px;
+    
 }
 .main-serv-sect{
-    width: 85%;
+    width: 90%;
     height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    
     align-items: center;
 }
 .serv-heading{
-    color: black;
+    color: #e8531f;
     background-color: white;
     border-bottom: 2px solid #e8531f;
     width: 100%;
+    height: 200px;
     text-align: center;
     height: 50px;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .servbox{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    height: 600px;
     justify-content: space-around;
+    background-color:white;
+    align-items: center;
 }
 .mainservbox{
     width: 500px;
+    height: 400px;
     background-color: white;
     border-radius: 10px;
 }
@@ -854,11 +858,20 @@ button {
 }
 .servboxtext{
     width: 100%;
-    height: 50%;
-    background-color:#e8531f;
-    color: black;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    height:100%;
+    background-color:#021239;
+    color:lightgray;
+    border-radius: 10px;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    transition: transform(0.5s);
+}
+.servboxtext:hover{
+    transform: scale(1.1);
 }
 
 
