@@ -1324,8 +1324,11 @@ textarea.massage_box::placeholder {
     margin: 90px 0px;
 }
 @media screen and (max-width:1350px) {
+    .header-overlay{
+        height: 800px;
+    }
     .our-service{
-        height: 4000px;
+        height: 5500px;
         width: 100%;
         background-color: green;
         display: flex;
@@ -1362,6 +1365,7 @@ textarea.massage_box::placeholder {
     }
     .s-text{
         text-align: center;
+        font-size: 35px;
     }
     .services-boxes{
         height:1000px;
@@ -1372,16 +1376,16 @@ textarea.massage_box::placeholder {
     }
     .inner-svb{
         flex-direction: column;
-        height: 600px;
+        height: 80%;
         justify-content: center;
         align-items: center;
-        padding: 30px;
+        /* padding: 30px; */
         width: 900px;
     }
     .svb-pic{
         border-bottom-left-radius:0px ;
         border-top-left-radius: 0px;
-        height: 200px;
+        height: 50%;
         width: 100%;
         
        
@@ -1389,15 +1393,16 @@ textarea.massage_box::placeholder {
     .svb-text{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-        height: 300px;
+        height: 50%;
         width: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
     .svb-ul{
         margin-left: 30px;
+        width: 90%;
     }
     .svb-ul.li{
         line-height: 10px;
@@ -1406,34 +1411,134 @@ textarea.massage_box::placeholder {
         right: 0px;
         left: 0px;
     }
-    .about_img::after {
-        content: '';
-        position: absolute;
-        background-color: #efefef;
-        width: 700px;
-        height: 600px;
-        margin: 0 auto;
-        left: initial;
-        right: 20px;
-        z-index: -1;
-        border-radius: 100%;
-        top: -40px;
+     .truck{
+        right: 0px;
     }
+    /* .about_img::after{
+        left: 0px;
+    }  */
     .project_section_3 {
         height: 800px;
     }
     .overlay-prod{
-        height: 300px;
+        /* height: 300px;
         width: 355px;
         position: absolute;
         top: 0px;
-        right: 90px;
+        right: 90px; */
+        display: none;
     }
     .inner-svb:hover{
-        transform: scale(1.5);
-        transition: transform .5s;
+        /* transform: scale(1.5);
+        transition: transform .5s; */
+        display: none;
 
     }
+    .offer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 55px;
+    }
    
+    
+}
+@media screen and (max-width:1200px) {
+    .header-overlay{
+        height: 650px;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .header-overlay{
+        height:500px ;
+    }
+}
+@media screen and (max-width:900px) {
+    .header-overlay{
+        height: 500px;
+    }
+    .services-boxes{
+        width:100% ;
+        min-width: 100%;
+    }
+    .inner-svb{
+        width: 100%;
+    }
+    .svb-pic{
+        width: 100%;
+    }
+    .svb-text{
+        width: 100%;
+    }
+    .truck{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:700px) {
+    .header-overlay{
+        height: 420px;
+    }
+    .project_section_3{
+        display: none;
+    }
+    .philosophy_text{
+        color: black;
+        font-weight: 400;
+        position: relative;
+        bottom: 70px;
+    }
+    .philosophy_taital{
+        color: black;
+        font-weight: 400;
+        position: relative;
+        bottom: 70px;
+    }
+    
+    .about_img::after{
+        display: none;
+    }
+    .truck{
+        right: 50px;
+        display: none;
+    }
+    .svb-text{
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .s-text{
+        width: 90%;
+        position: static;
+        font-size: 30px;
+     
+    }
+    .our-service{
+        height: 5000px;
+    }
+    .main-service{
+
+    }
+    .services-boxes{
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    background-color: white;
+    display: flex;
+    }
+    .inner-svb{
+        height: 90%;
+    }
+    .svb-pic{
+        height: 50%;
+    }
+    .svb-text{
+        height: 50%;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .offer{
+        font-size: 45px;
+    }
     
 }
