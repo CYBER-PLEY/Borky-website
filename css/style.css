@@ -328,6 +328,7 @@ button {
     border-radius: 5px;
 }
 
+
 .more_bt a:hover {
     color: #ffffff;
     background-color: #e8531f;
@@ -400,6 +401,28 @@ button {
     margin: 0px;
     padding-top: 30px;
 }
+#about-hidden{
+    display: none;
+}
+#show-more{
+    background-color: #e8531f;
+    width: 200px;
+    height: 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+#show-less{
+    background-color: #e8531f;
+    width: 200px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 473px;
+    right: 360px;
+    z-index: 2;
+}
+
 
 .about_main {
     padding-left: 100px;
@@ -676,6 +699,7 @@ button {
     color: white;
     position: relative;
 }
+
 .b-1{
     right: 35px;
 }
@@ -850,6 +874,22 @@ button {
     position: relative;
     border-radius: 20px;
 }
+.service-banner{
+    height: 300px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    background: url(../images/rth\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
 .serv-sect{
     width: 100%;
     height: 15000px;
@@ -862,11 +902,11 @@ button {
 .main-serv-sect{
     width: 90%;
     height: 100%;
-    background-color: rgb(121, 115, 115);;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    gap: 20px;
 }
 .serv-heading{
     color: #e8531f;
@@ -880,24 +920,32 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 5px;
     gap: 0px;
     margin-top: 5px;
+    
 }
+/* .serv-hd-pic{
+    position: relative;
+    width: 40%;
+    height: 100%;
+} */
 .servbox{
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction:row;
+    width: 75%;
     height: 600px;
     justify-content: space-around;
-    background-color:rgb(121, 115, 115);
+    background-color:rgb(252, 252, 252);
     align-items: center;
+    gap: 20px;
+}
+.sp-1{
+    height: 600px
 }
 .mainservbox{
     width: 500px;
     height: 400px;
     background-color: #021239;
-    border-radius: 10px;
     display: flex;
     align-items: flex-end;
 }
@@ -913,7 +961,7 @@ button {
     background-color:white;
     color:black;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -921,9 +969,13 @@ button {
     font-family: 'Oswald', sans-serif;
     transition: transform(0.5s);
     flex-direction: column;
+    padding: 10px;
 }
 .servboxtext:hover{
     transform: scale(1.1);
+}
+.e-7{
+    font-size: 16px;
 }
 
 
@@ -1254,6 +1306,87 @@ textarea.massage_box::placeholder {
     background-color: #e07c06;
     border-radius: 100px;
 }
+.resource-banner{
+    background: url(../images/rth\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.res-text-1{
+    font-weight: bolder;
+    font-size: 40px;
+    color: #000;
+    text-align: left;
+}
+.res-text-2{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+}
+.resource-page{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.res-heading{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+}
+.reg-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.res-row{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.res-column{
+    width: 300px;
+    height: 150px;
+    background-color: #76767654;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px;
+}
+.resource-banner.p{
+    background: url(../images/air-filt-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.res-text-1.p{
+    color: white;
+}
+.res-text-2.p{
+    color: white;
+}
 
 .footer_section {
     width: 100%;
@@ -1262,6 +1395,7 @@ textarea.massage_box::placeholder {
     height: auto;
     padding: 70px 0px 50px 0px;
 }
+
 
 .map_text {
     width: 100%;
@@ -1279,8 +1413,9 @@ textarea.massage_box::placeholder {
 }
 
 .image_main {
-    height: auto;
-    min-width: 55px;
+    width: 60px;
+    height: 60px;
+    min-width: 45px;
     max-width: 65px;
 }
 
@@ -1323,6 +1458,40 @@ textarea.massage_box::placeholder {
 .margin_90 {
     margin: 90px 0px;
 }
+.e-1{
+    font-size: 18px;
+    }
+    .e-2{
+        font-size: 18px;
+    }
+    .e-3{
+        font-size: 18px;
+    }
+    .e-4{
+        font-size: 18px;
+    }
+    .e-5{
+        font-size: 18px;
+    }
+    .e-6{
+        font-size: 18px;
+    }
+    .e-7{
+        font-size: 16px;
+    }
+    .e-8{
+        font-size: 18px;
+    }
+    .footer-icon{
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
 @media screen and (max-width:1350px) {
     .header-overlay{
         height: 800px;
@@ -1440,6 +1609,38 @@ textarea.massage_box::placeholder {
         align-items: center;
         font-size: 55px;
     }
+    .servboxtext{
+        transition: none;
+        font-size: 20px;
+    }
+    .servboxtext:hover{
+        transform: none;
+    }
+        .e-1{
+        font-size: 18px;
+        }
+        .e-2{
+            font-size: 18px;
+        }
+        .e-3{
+            font-size: 18px;
+        }
+        .e-4{
+            font-size: 18px;
+        }
+        .e-5{
+            font-size: 18px;
+        }
+        .e-6{
+            font-size: 18px;
+        }
+        .e-7{
+            font-size: 18px;
+        }
+        .e-8{
+            font-size: 18px;
+        }
+    
    
     
 }
@@ -1540,5 +1741,65 @@ textarea.massage_box::placeholder {
     .offer{
         font-size: 45px;
     }
+    .serv-sect{
+        height: 21000px;
+    }
+    .main-serv-sect{
+        gap: 20px;
+    }
+    .servbox{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        gap: 20px;
+    }
+    .servboxtext{
+        font-size: 18px;
+    }
+    .serv-heading{
+        font-size: 25px;
+        font-weight: bolder;
+    }
     
+}
+@media screen and (max-width:600px){
+   .servbox{
+    width: 100%;
+   } 
+   .mainservbox{
+    width: 100%;
+    /* height: auto; */
+    background-color: orange;
+   }
+   .servboxtext{
+    width: 100%;
+    height: 100%;
+   }
+   .e-1{
+    font-size: 15px;
+    }
+    .e-2{
+        font-size: 15px;
+    }
+    .e-3{
+        font-size: 15px;
+    }
+    .e-4{
+        font-size: 15px;
+    }
+    .e-5{
+        font-size: 15px;
+    }
+    .e-6{
+        font-size: 15px;
+    }
+    .e-7{
+        font-size: 15px;
+    }
+    .e-8{
+        font-size: 15px;
+    }
+    .serv-heading{
+        font-size: 20px;
+    }
 }

@@ -51,10 +51,13 @@
                         <a class="nav-link" href="services.html">Services</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="./products.html">Products</a>
+                        <a class="nav-link" href="./useful-resources.html">Resources</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <a class="nav-link" href="products.html">Products</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                      </li>
                   </ul>
                   <div class="search_icon"><a href="#"><img src="images/search-icon.png"></a></div>
@@ -71,14 +74,24 @@
                   <div class="about_main">
                      <div class="about_taital">About company</div>
                      <p class="about_text">At BORKY S.G. Bakre & Associates, we are dedicated to driving positive change in the world through environmental stewardship and sustainable solutions. Our commitment to a greener, more sustainable future is at the heart of everything we do.
-                        
-                        Our Mission:
+                        <br>
+                     <span id="about-hidden">
+                        <b>Our Mission:</b>
                         <br>
                         
-                        Our mission is simple yet profound: to create a world where humanity and the environment coexist harmoniously. We believe that responsible environmental practices are not just a choice but a responsibility, and we are here to help individuals, businesses, and organizations embrace this responsibility.
+                        Our mission is simple yet profound: to create a world where humanity and the environment coexist harmoniously.<br> We believe that responsible environmental practices are not just a choice but a responsibility, and we are here to help individuals, businesses, and organizations embrace this responsibility.
                         <br>
                         We, at BORKY S. G. BAKRE & ASSOCIATES, are a group of Industrial Designers, Engineers, Technologists, and Economists. We are a Government Accredited Environmental and Energy Consulting and Contracting Firm; with many years of experience and success in Planning and Developing Industrial Equipment, Techniques, and Solutions - helping different industries to Transform Technology into Efficiently Operating Plants and Facilities.
+                        <button id="show-less">
+                           SHOW LESS
+                        </button>
                      </p>
+                     <button id="show-more">
+                        SHOW MORE
+                     </button>
+                     
+
+                  </span>
                      
                   </div>
                </div>
@@ -373,13 +386,13 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-sm-12">
-                  <div class="map_text"><a href="#"><img src="images/map-icon.png" class="image_main"><span class="padding_left_10">No.123 Industrial Estate, Lagos, Nigeria</span></a></div>
+                  <div class="map_text"><a href="#"><div class="footer-icon"><img src="./images/map-icon.png" alt=""></div><span class="padding_left_10">No.123 Industrial Estate, Lagos, Nigeria</span></a></div>
                </div>
                <div class="col-lg-4 col-sm-12">
-                  <div class="map_text"><a href="#"><img src="images/call-icon.png" class="image_main"><span class="padding_left_10">tel:+2348181084745</span></a></div>
+                  <div class="map_text"><a href="#"><div class="footer-icon"><img src="./images/call-icon.png" alt=""></div><span class="padding_left_10">tel:+2348181084745</span></a></div>
                </div>
                <div class="col-lg-4 col-sm-12">
-                  <div class="map_text"><a href="#"><img src="images/mail-icon.png" class="image_main"><span class="padding_left_10">info@borkyassociates.ng</span></a></div>
+                  <div class="map_text"><a href="#"><div class="footer-icon"><img src="./images/mail-icon.png" alt=""></i></div><span class="padding_left_10">info@borkyassociates.ng</span></a></div>
                </div>
             </div>
          </div>
@@ -388,7 +401,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">Copyright 2023 All Right Reserved By Borke S.G Bakre & Associates. Designed by CYBER-PLEY</p>
+            <p class="copyright_text">Copyright 2023 All Right Reserved By Borke S.G Bakre & Associates. Designed by PLEY</p>
          </div>
       </div>
       <!-- copyright section end -->    
@@ -404,5 +417,13 @@
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+         $('#show-more').on('click' , function(){
+            $('#about-hidden').show(console.log('i work'))
+         })
+         $('#show-less').on('click' , function(){
+            $('#about-hidden').hide(console.log('i work'))
+         })
+      </script>
    </body>
 </html>
