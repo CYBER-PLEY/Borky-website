@@ -1338,6 +1338,10 @@ textarea.massage_box::placeholder {
     align-items: center;
     flex-direction: column;
 }
+.resource-page.rp{
+    background-color: lightblue;
+    height: 3500px;
+}
 .res-heading{
     width: 100%;
     height: 200px;
@@ -1363,6 +1367,10 @@ textarea.massage_box::placeholder {
     text-align: center;
     gap: 20px;
 }
+.res-row.rr{
+    height: 500px;
+    padding: 20px;
+}
 .res-column{
     width: 300px;
     height: 150px;
@@ -1375,6 +1383,22 @@ textarea.massage_box::placeholder {
     padding: 10px;
     box-shadow: 1px 1px 5px;
 }
+.r-1{
+    background-color:white;
+    color: black;
+    border-radius: 10px;
+    height: auto;
+    min-height: 70%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    font-weight: 600;
+}
+.rc-pic{
+    width: 300px;
+    height: 200px;
+}
 .resource-banner.p{
     background: url(../images/air-filt-2.png);
     background-position: center;
@@ -1386,6 +1410,7 @@ textarea.massage_box::placeholder {
 }
 .res-text-2.p{
     color: white;
+    width: 50%;
 }
 
 .footer_section {
@@ -1423,8 +1448,10 @@ textarea.massage_box::placeholder {
     display: flex;
     align-items: center;
     background-color:#021239;
-    gap: 30px;
+    gap: 10px;
+    font-size: 15px;
 }
+
 
 .copyright_section {
     width: 100%;
@@ -1640,6 +1667,12 @@ textarea.massage_box::placeholder {
         .e-8{
             font-size: 18px;
         }
+    .abl-nv{
+        margin: 0px;
+    }
+    .logo{
+        margin: 0px;
+    }
     
    
     
@@ -1653,6 +1686,16 @@ textarea.massage_box::placeholder {
 @media screen and (max-width:1000px) {
     .header-overlay{
         height:500px ;
+    }
+    .resource-page{
+        height: 2500px;
+        gap: 50px;
+    }
+    .res-row{
+        height: 400px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
     }
 }
 @media screen and (max-width:900px) {
@@ -1676,6 +1719,62 @@ textarea.massage_box::placeholder {
         width: 300px;
         height: 200px;
     }
+}
+@media screen and (max-width:730px) {
+    .svb-text{
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .s-text{
+        width: 90%;
+        position: static;
+        font-size: 30px;
+     
+    }
+    .our-service{
+        height: 5000px;
+    }
+    .services-boxes{
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+        background-color: white;
+        display: flex;
+        }
+        .inner-svb{
+            height: 90%;
+        }
+        .svb-pic{
+            height: 50%;
+        }
+        .svb-text{
+            height: 50%;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .offer{
+            font-size: 45px;
+        }
+        .serv-sect{
+            height: 21000px;
+        }
+        .main-serv-sect{
+            gap: 20px;
+        }
+        .servbox{
+            display: flex;
+            flex-direction: column;
+            height: 700px;
+            gap: 20px;
+        }
+        .servboxtext{
+            font-size: 18px;
+        }
+        .serv-heading{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+    
 }
 @media screen and (max-width:700px) {
     .header-overlay{
@@ -1704,61 +1803,28 @@ textarea.massage_box::placeholder {
         right: 50px;
         display: none;
     }
-    .svb-text{
-        text-align: left;
-        justify-content: flex-start;
+    
+   
+    
+    .resource-page{
+        height: 4300px;
     }
-    .s-text{
-        width: 90%;
-        position: static;
-        font-size: 30px;
-     
-    }
-    .our-service{
-        height: 5000px;
-    }
-    .main-service{
-
-    }
-    .services-boxes{
-    justify-content: center;
-    align-items: center;
-    height: 850px;
-    background-color: white;
-    display: flex;
-    }
-    .inner-svb{
-        height: 90%;
-    }
-    .svb-pic{
-        height: 50%;
-    }
-    .svb-text{
-        height: 50%;
-        justify-content: center;
-        font-size: 18px;
-    }
-    .offer{
-        font-size: 45px;
-    }
-    .serv-sect{
-        height: 21000px;
-    }
-    .main-serv-sect{
-        gap: 20px;
-    }
-    .servbox{
-        display: flex;
+    .res-row{
         flex-direction: column;
-        height: 700px;
-        gap: 20px;
+        flex-wrap: nowrap;
+        height: 800px;
     }
-    .servboxtext{
-        font-size: 18px;
+    .res-heading{
+        height: 250px;
     }
-    .serv-heading{
-        font-size: 25px;
-        font-weight: bolder;
+    .res-heading{
+        align-self: center;
+        font-size: 30px;
+    }
+    .res-row{
+        height: auto;
+        max-height: 800px;
+        min-height: 400px;
     }
     
 }
@@ -1802,4 +1868,27 @@ textarea.massage_box::placeholder {
     .serv-heading{
         font-size: 20px;
     }
+    .serv-sect{
+        height: auto;
+    }
+   .main-serv-sect{
+    height: auto;
+   }
+    .servbox{
+        
+        height: auto;
+    }
+    .sp-1{
+        height:400px ;
+    }
+    .e-1{
+        font-size: 14px;
+    }
+    .servboxtext{
+        height: auto;
+    }
+    .mainservbox{
+        height: auto;
+    }
+    
 }
