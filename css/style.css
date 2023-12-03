@@ -1387,13 +1387,12 @@ textarea.massage_box::placeholder {
     background-color:white;
     color: black;
     border-radius: 10px;
-    height: auto;
-    min-height: 70%;
-    max-height: 90%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     width: 340px;
     font-weight: 600;
+    
 }
 .rc-pic{
     width: 300px;
@@ -1410,7 +1409,7 @@ textarea.massage_box::placeholder {
 }
 .res-text-2.p{
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
 .footer_section {
@@ -1448,7 +1447,7 @@ textarea.massage_box::placeholder {
     display: flex;
     align-items: center;
     background-color:#021239;
-    gap: 10px;
+    gap: 20px;
     font-size: 15px;
 }
 
@@ -1697,6 +1696,47 @@ textarea.massage_box::placeholder {
         justify-content: center;
         gap: 60px;
     }
+    .resource-page.rp{
+        height: 6000px;
+        
+    }
+    .res-row.rr{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .res-column.r-1{
+        display: flex;
+        height: auto;
+        width: auto;
+        max-height: 400px;
+        max-width: 300px;
+        min-height: 200px;
+        min-width: 300px;
+        display: flex;
+        
+     
+    }
+    .exec-projects{
+        height: 4000px;
+    }
+    .exec-mainbox{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        max-height: 400px;
+    }
+    .exec-subbox{
+        min-height: 100px;
+        min-width: 300px;
+    }
+    .main-exec-projects{
+        height: 100%;
+    }
 }
 @media screen and (max-width:900px) {
     .header-overlay{
@@ -1719,6 +1759,12 @@ textarea.massage_box::placeholder {
         width: 300px;
         height: 200px;
     }
+    .res-heading.pr{
+        background-color: white;
+        height: 250px;
+        text-align: center;
+    }
+   
 }
 @media screen and (max-width:730px) {
     .svb-text{
@@ -1803,16 +1849,13 @@ textarea.massage_box::placeholder {
         right: 50px;
         display: none;
     }
-    
-   
-    
     .resource-page{
         height: 4300px;
     }
     .res-row{
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 800px;
+        height: 1000px;
     }
     .res-heading{
         height: 250px;
@@ -1826,8 +1869,29 @@ textarea.massage_box::placeholder {
         max-height: 800px;
         min-height: 400px;
     }
-    
-}
+    .rp{
+        background-color: #021239;
+    }
+    .resource-page.rp{
+    height: 8000px;
+    gap: 15px;
+    }
+    .res-row.rr{
+    height: 1400px;
+    padding: 0px;
+    max-height: none;
+    gap: 15px;
+    }
+    .res-row.rr-1{
+        height: 350px;
+    }
+    .res-column.r-1{
+    height: 350px;
+    }
+
+
+    }
+
 @media screen and (max-width:600px){
    .servbox{
     width: 100%;
@@ -1889,6 +1953,9 @@ textarea.massage_box::placeholder {
     }
     .mainservbox{
         height: auto;
+    }
+    .resource-banner.p{
+        padding: 10px;
     }
     
 }
